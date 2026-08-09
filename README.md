@@ -1,106 +1,190 @@
-# 👩🏻‍💻 ¡Hola! Soy Yesica Yanira
+# 🖥️ Northwind WPF Applications
 
-### 🚀 Estudiante de Ingeniería de Sistemas | Developer en formación
+> Sistema de gestión de datos para la base de datos Northwind desarrollado en C# con WPF
 
-> *"Aprendiendo hoy para crear cosas increíbles mañana."*
+## ✨ Características
 
----
+### 📋 Gestión de Clientes
+- 🔍 Búsqueda de clientes por país
+- 📊 Visualización en lista interactiva
+- ⚡ Carga dinámica de datos
 
-## 🌸 Sobre mí
+### 🏷️ Gestión de Productos  
+- 📦 Listado completo de productos
+- ✏️ Edición en tiempo real
+- 💾 Sincronización con base de datos
 
-🎓 Estudiante de **Ingeniería de Sistemas**
-💻 Explorando el mundo del desarrollo de software
-🧠 Aprendiendo constantemente nuevas tecnologías
-☕ Sobreviviendo a base de código, café y paciencia
-🎯 En proceso de convertir ideas en proyectos reales
-
----
-
-## 🛠️ Tecnologías que estoy aprendiendo
-
-<div align="center">
-
-### 💻 Lenguajes
-
-`C#` `Java` `SQL` `PSeInt`
-
-### 🎨 Desarrollo
-
-`WPF` `XAML` `Visual Studio`
-
-### 🗄️ Bases de datos
-
-`SQL Server`
-
-### 🔧 Herramientas
-
-`Git` `GitHub` `Visual Studio`
-
-</div>
+### 🔐 Seguridad
+- 🔑 Autenticación integrada de Windows
+- 🛡️ Conexiones seguras a SQL Server
 
 ---
 
-## 📚 Actualmente aprendiendo
+## 🛠️ Tecnologías
 
-```text
-💻 Programación
-████████████████░░░░ 80%
+| Tecnología | Versión |
+|------------|---------|
+| C# | .NET 6/7/8 |
+| WPF | .NET Core |
+| SQL Server | 2019/2022 |
+| XAML | - |
+| ADO.NET | - |
 
-🗄️ Bases de Datos
-███████████████░░░░░ 75%
+---
 
-🎨 Desarrollo de Interfaces
-██████████████░░░░░░ 70%
+## 📁 Estructura del Proyecto
 
-🧠 Algoritmos
-████████████████░░░░ 80%
+```
+Northwind/
+├── 📄 frmBuscarClientes.xaml
+├── 📄 frmBuscarClientes.xaml.cs
+├── 📄 Productos.xaml
+├── 📄 Productos.xaml.cs
+├── 📄 MainWindow.xaml
+├── 📄 MainWindow.xaml.cs
+└── 📄 Cliente.cs
 ```
 
 ---
 
-## 🚀 Proyectos
+## 🗃️ Base de Datos
 
-| Proyecto               | Descripción                         | Tecnologías    |
-| ---------------------- | ----------------------------------- | -------------- |
-| 🎰 Tragamonedas        | Aplicación de escritorio            | C# + WPF       |
-| 🎱 Bingo               | Juego interactivo                   | C# + WPF       |
-| 🦷 Centro Odontológico | Sistema de gestión                  | C# + WPF + SQL |
-| 🚗 AutoLimpioExpress   | Sistema para servicios de vehículos | C# + WPF       |
-| 🗃️ Base de Datos      | Ejercicios y proyectos SQL          | SQL Server     |
+### Diagrama de Base de Datos - Northwind
 
----
+```
+┌─────────────────────┐     ┌─────────────────────┐
+│     Customers       │     │     Products        │
+├─────────────────────┤     ├─────────────────────┤
+│ CustomerID (PK)     │     │ ProductID (PK)      │
+│ CompanyName         │     │ ProductName         │
+│ ContactName         │     │ UnitPrice          │
+│ Country             │     │ UnitsInStock       │
+└─────────────────────┘     │ Discontinued       │
+                            └─────────────────────┘
+```
 
-## 📊 Mis objetivos
-
-* [x] Aprender fundamentos de programación
-* [x] Empezar con bases de datos
-* [x] Crear interfaces con WPF
-* [ ] Mejorar mis proyectos en C#
-* [ ] Aprender desarrollo web
-* [ ] Crear proyectos más completos
-* [ ] Conseguir mi primer gran proyecto 🚀
-
----
-
-## 🌷 Un poco más sobre mí
-
-Me gusta aprender haciendo proyectos.
-Cada error en el código es una oportunidad para aprender algo nuevo.
+### Configuración de Conexión
 
 ```csharp
-while (!success)
-{
-    learn();
-    tryAgain();
-}
-
-keepGoing();
+string cadenaConexion = "Server=.\\SQLEXPRESS;Database=Northwind;Integrated Security=True;TrustServerCertificate=True;";
 ```
 
 ---
 
-### ✨ Gracias por visitar mi perfil
+## 🚀 Instalación
 
-**`yguevarao241`** · Ingeniería de Sistemas · Perú 🇵🇪
+### Requisitos Previos
 
-⭐ Si encuentras algún proyecto interesante, ¡no dudes en darle una estrella!
+- ✅ Visual Studio 2022
+- ✅ SQL Server o SQL Server Express
+- ✅ Base de datos Northwind
+
+### Pasos de Instalación
+
+1. **Clonar el repositorio**
+```bash
+git clone https://github.com/yguevarao241/northwind-wpf.git
+```
+
+2. **Abrir el proyecto en Visual Studio**
+```bash
+cd northwind-wpf
+start Northwind.sln
+```
+
+3. **Restaurar paquetes NuGet**
+```bash
+dotnet restore
+```
+
+4. **Configurar base de datos**
+```sql
+CREATE DATABASE Northwind;
+-- Ejecutar script de Northwind
+```
+
+5. **Ejecutar aplicación**
+```bash
+dotnet run
+```
+
+---
+
+## 💡 Funcionalidades
+
+### 🏠 Menú Principal
+
+```mermaid
+graph LR
+    A[Menú Principal] --> B[Buscar Clientes]
+    A --> C[Gestionar Productos]
+    B --> D[Seleccionar País]
+    B --> E[Lista de Clientes]
+    C --> F[Ver Productos]
+    C --> G[Sincronizar Cambios]
+```
+
+### 🔍 Buscar Clientes
+- Selecciona un país del ComboBox
+- Visualiza los clientes en tiempo real
+- Información detallada de cada cliente
+
+### 🏷️ Gestionar Productos
+- Visualización en DataGrid
+- Edición de campos directamente
+- Sincronización de cambios
+
+---
+
+## 📸 Screenshots
+
+<p align="center">
+  <img src="https://via.placeholder.com/400x250?text=Buscador+de+Clientes" alt="Buscador de Clientes" width="400" />
+  <img src="https://via.placeholder.com/400x250?text=Gestión+de+Productos" alt="Gestión de Productos" width="400" />
+</p>
+
+---
+
+## 🤝 Cómo Contribuir
+
+1. **Fork** el proyecto
+2. **Crea tu rama** (`git checkout -b feature/AmazingFeature`)
+3. **Commit** tus cambios (`git commit -m 'Add: AmazingFeature'`)
+4. **Push** a la rama (`git push origin feature/AmazingFeature`)
+5. **Abre un Pull Request**
+
+---
+
+## 📝 Licencia
+
+Distribuido bajo licencia MIT. Ver `LICENSE` para más información.
+
+---
+
+## 👩‍💻 Sobre la Autora
+
+**Yesica Yanira**  
+Estudiante de Ingeniería de Sistemas  
+Sobreviviendo a base de café ☕ y código ⌨️  
+
+📍 Perú  
+📧 yesica.yanira@email.com  
+🐙 [GitHub](https://github.com/yguevarao241)  
+
+---
+
+## 🌟 Agradecimientos
+
+- 🙏 Microsoft por la base de datos Northwind
+- 🙏 Comunidad de desarrollo de C# y WPF
+- 🙏 Mi café de cada mañana ☕
+
+---
+
+<p align="center">
+  <b>⭐ Si te gusta el proyecto, ¡no olvides darle una estrella! ⭐</b>
+</p>
+
+---
+
+*"Cada línea de código es un paso hacia algo más grande."*
