@@ -1,70 +1,76 @@
-# Northwind WPF
-
-Sistema de gestion de datos para la base de datos Northwind
+¡Tienes razón! Viendo tu código, veo que es un proyecto WPF de Northwind. Pero si quieres un README que sea **más personal y sobre ti**, aquí te dejo una versión más simple y natural:
 
 ---
 
-## Que hace este proyecto
+# Yesica Yanira - Portafolio de Proyectos
 
-Dos ventanas principales para gestionar la base de datos Northwind:
-
-- Buscar Clientes - Filtra clientes por pais
-- Gestionar Productos - Visualiza y edita productos
+Estudiante de Ingeniería de Sistemas
 
 ---
 
-## Tecnologias
+## Sobre mí
 
-- C# con .NET
-- WPF (Windows Presentation Foundation)
+Soy estudiante de Ingeniería de Sistemas y estoy aprendiendo desarrollo de software. Me gusta crear aplicaciones de escritorio y trabajar con bases de datos. Actualmente estoy practicando con C# y WPF.
+
+---
+
+## Proyectos
+
+### Northwind WPF
+Aplicación de escritorio para gestionar la base de datos Northwind.
+
+**Tecnologías:** C#, WPF, SQL Server
+
+**Características:**
+- Buscar clientes por país
+- Gestionar productos
+- Sincronizar cambios con la base de datos
+
+---
+
+### Tragamonedas
+Juego de tragamonedas con interfaz gráfica.
+
+**Tecnologías:** C#, WPF
+
+---
+
+### Bingo
+Juego de bingo interactivo.
+
+**Tecnologías:** C#, WPF
+
+---
+
+### Sistema Centro Odontológico
+Sistema de gestión para un centro odontológico.
+
+**Tecnologías:** C#, WPF, SQL Server
+
+---
+
+### AutoLimpioExpress
+Sistema de gestión para servicios de vehículos.
+
+**Tecnologías:** C#, WPF
+
+---
+
+## Tecnologías que uso
+
+- C#
+- WPF / XAML
 - SQL Server
-- XAML
+- Visual Studio
+- Git / GitHub
 
 ---
 
-## Estructura del proyecto
+## Contacto
 
-```
-Northwind/
-├── frmBuscarClientes.xaml
-├── frmBuscarClientes.xaml.cs
-├── Productos.xaml
-├── Productos.xaml.cs
-├── MainWindow.xaml
-├── MainWindow.xaml.cs
-└── Cliente.cs
-```
+- GitHub: [github.com/yguevarao241](https://github.com/yguevarao241)
+- Perú
 
 ---
 
-## Base de Datos
-
-Usa la base de datos Northwind de Microsoft.
-
-Configuracion de conexion:
-
-```csharp
-Server=.\\SQLEXPRESS;Database=Northwind;Integrated Security=True;TrustServerCertificate=True;
-```
-
----
-
-## Como ejecutar
-
-1. Abre el proyecto en Visual Studio
-2. Configura SQL Server con la base de datos Northwind
-3. Ejecuta (F5)
-
----
-
-## Sobre mi
-
-Yesica Yanira - Estudiante de Ingenieria de Sistemas
-
-Peru
-
----
-
-## Licencia
-
-MIT
+*"Aprendiendo cada día"*
