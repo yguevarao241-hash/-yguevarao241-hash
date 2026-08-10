@@ -1,8 +1,5 @@
-¡Tienes razón! Viendo tu código, veo que es un proyecto WPF de Northwind. Pero si quieres un README que sea **más personal y sobre ti**, aquí te dejo una versión más simple y natural:
 
----
-
-# Yesica Yanira - Portafolio de Proyectos
+# Yesica Yanira - Portafolio
 
 Estudiante de Ingeniería de Sistemas
 
@@ -10,59 +7,42 @@ Estudiante de Ingeniería de Sistemas
 
 ## Sobre mí
 
-Soy estudiante de Ingeniería de Sistemas y estoy aprendiendo desarrollo de software. Me gusta crear aplicaciones de escritorio y trabajar con bases de datos. Actualmente estoy practicando con C# y WPF.
+Soy estudiante de Ingeniería de Sistemas y me apasiona el desarrollo de software. Me gusta aprender nuevas tecnologías y crear aplicaciones funcionales. Actualmente estoy profundizando mis conocimientos en desarrollo de aplicaciones de escritorio y bases de datos.
+
+---
+
+## Lenguajes y Tecnologías
+
+### Lenguajes de Programación
+- C#
+- Java
+- SQL
+- Python
+- JavaScript
+
+### Frameworks y Bibliotecas
+- .NET / .NET Core
+- WPF
+- Windows Forms
+- XAML
+
+### Bases de Datos
+- SQL Server
+- MySQL
+- PostgreSQL
+
+### Herramientas
+- Visual Studio
+- Visual Studio Code
+- SQL Server Management Studio
+- Git
+- GitHub
 
 ---
 
 ## Proyectos
 
-### Northwind WPF
-Aplicación de escritorio para gestionar la base de datos Northwind.
-
-**Tecnologías:** C#, WPF, SQL Server
-
-**Características:**
-- Buscar clientes por país
-- Gestionar productos
-- Sincronizar cambios con la base de datos
-
----
-
-### Tragamonedas
-Juego de tragamonedas con interfaz gráfica.
-
-**Tecnologías:** C#, WPF
-
----
-
-### Bingo
-Juego de bingo interactivo.
-
-**Tecnologías:** C#, WPF
-
----
-
-### Sistema Centro Odontológico
-Sistema de gestión para un centro odontológico.
-
-**Tecnologías:** C#, WPF, SQL Server
-
----
-
-### AutoLimpioExpress
-Sistema de gestión para servicios de vehículos.
-
-**Tecnologías:** C#, WPF
-
----
-
-## Tecnologías que uso
-
-- C#
-- WPF / XAML
-- SQL Server
-- Visual Studio
-- Git / GitHub
+He desarrollado aplicaciones de escritorio, sistemas de gestión, juegos interactivos y consultas SQL. Todos mis proyectos están disponibles en mi repositorio de GitHub.
 
 ---
 
@@ -73,4 +53,5 @@ Sistema de gestión para servicios de vehículos.
 
 ---
 
-*"Aprendiendo cada día"*
+*"Aprendiendo constantemente, creando soluciones"*
+
